@@ -49,7 +49,7 @@
 }
 
 #align(center)[
-  #text(size: 18pt, weight: "bold")[AMR ANWAR HUSSAIN AHMED AL-ARKANI] \
+  #text(size: 18pt, weight: "bold")[AMR AL-ARKANI] \
   #v(2pt)
   #text(size: 9pt, fill: rgb("#444444"))[
     #fa-envelope() #h(2pt) amr\@amr.engineer #h(4pt) • #h(4pt)
