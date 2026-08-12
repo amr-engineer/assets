@@ -5,7 +5,7 @@
     #text(size: 8pt, fill: rgb("#777777"))[
       Reference: #link("https://amr.engineer/cv")[amr.engineer/cv]
     ]
-  ]
+  ],
 )
 
 #set text(
@@ -17,6 +17,8 @@
 #set par(justify: false, leading: 0.55em)
 
 #show link: set text(fill: rgb("#1C366C"))
+
+#import "@preview/fontawesome:0.5.0": *
 
 #let section(title) = {
   v(4pt)
@@ -50,10 +52,11 @@
   #text(size: 18pt, weight: "bold")[AMR ANWAR HUSSAIN AHMED AL-ARKANI] \
   #v(2pt)
   #text(size: 9pt, fill: rgb("#444444"))[
-    amr\@amr.engineer #h(4pt) • #h(4pt)
-    #link("https://wa.me/966504979812")[+966 50 497 9812] #h(4pt) • #h(4pt)
-    #link("https://amr.engineer")[amr.engineer] #h(4pt) • #h(4pt)
-    #link("https://github.com/amr-engineer")[github.com/amr-engineer]
+    #fa-envelope() #h(2pt) amr\@amr.engineer #h(4pt) • #h(4pt)
+    #fa-whatsapp() #h(2pt) #link("https://wa.me/966504979812")[+966 50 497 9812] #h(4pt) • #h(4pt)
+    #fa-map-marker-alt() #h(2pt) Makkah, SA #h(4pt) • #h(4pt)
+    #fa-globe() #h(2pt) #link("https://amr.engineer")[amr.engineer] #h(4pt) • #h(4pt)
+    #fa-github() #h(2pt) #link("https://github.com/amr-engineer")[github.com/amr-engineer]
   ]
 ]
 
