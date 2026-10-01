@@ -1,0 +1,1 @@
+All content of this repository are proprietary and for authorized use only.
