@@ -1,0 +1,31 @@
+name: Compile Typst Document
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.typ'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v2
+
+      - name: Compile Typst document
+        run: typst compile amr-cv.typ amr-cv.pdf
+
+      - name: Commit and push PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update compiled PDF [skip ci]"
+          file_pattern: "amr-cv.pdf"
