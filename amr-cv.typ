@@ -52,7 +52,7 @@
   #text(size: 18pt, weight: "bold")[AMR AL-ARKANI] \
   #v(2pt)
   #text(size: 9pt, fill: rgb("#444444"))[
-    #fa-envelope() #h(2pt) amr\@amr.engineer #h(4pt) • #h(4pt)
+    #fa-envelope() #h(2pt) amr\@programmer.net #h(4pt) • #h(4pt)
     #fa-whatsapp() #h(2pt) #link("https://wa.me/966504979812")[+966 50 497 9812] #h(4pt) • #h(4pt)
     #fa-map-marker-alt() #h(2pt) Makkah, SA #h(4pt) • #h(4pt)
     #fa-globe() #h(2pt) #link("https://amr.sarmad.studio")[amr.sarmad.studio] #h(4pt) • #h(4pt)
