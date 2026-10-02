@@ -17,8 +17,14 @@ jobs:
 
       - uses: typst-community/setup-typst@v4
 
+      - name: Install Font Awesome
+        run: |
+          curl -sL https://github.com/FortAwesome/Font-Awesome/releases/download/6.7.2/fontawesome-free-6.7.2-desktop.zip -o fa.zip
+          unzip -q fa.zip -d fa
+          mkdir -p fonts && cp fa/*/otfs/*.otf fonts/
+
       - name: Compile
-        run: typst compile amr-cv.typ amr-cv.pdf
+        run: typst compile --font-path fonts amr-cv.typ amr-cv.pdf
 
       - name: Commit PDF
         run: |
