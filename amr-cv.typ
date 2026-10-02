@@ -56,7 +56,7 @@
     #fa-whatsapp() #h(2pt) #link("https://wa.me/966504979812")[+966 50 497 9812] #h(4pt) • #h(4pt)
     #fa-map-marker-alt() #h(2pt) Makkah, SA #h(4pt) • #h(4pt)
     #fa-globe() #h(2pt) #link("https://amr-arkani.pages.dev")[amr-arkani.pages.dev] #h(4pt) • #h(4pt)
-    #fa-github() #h(2pt) #link("https://github.com/amr-engineer")[github.com/amr-engineer]
+    #fa-github() #h(2pt) #link("https://github.com/amr-engineer")[amr-engineer]
   ]
 ]
 
