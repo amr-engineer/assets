@@ -1,11 +1,10 @@
-name: Compile Typst Document
+name: Build CV
 
 on:
   push:
-    branches:
-      - main
     paths:
-      - '**/*.typ'
+      - amr-cv.typ
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,19 +12,18 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Typst
-        uses: typst-community/setup-typst@v2
+      - uses: typst-community/setup-typst@v4
 
-      - name: Compile Typst document
+      - name: Compile
         run: typst compile amr-cv.typ amr-cv.pdf
 
-      - name: Commit and push PDF
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update compiled PDF [skip ci]"
-          file_pattern: "amr-cv.pdf"
+      - name: Commit PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add amr-cv.pdf
+          git diff --staged --quiet || git commit -m "Build amr-cv.pdf"
+          git push
