@@ -3,7 +3,7 @@
   margin: (x: 1.25cm, y: 1.25cm),
   footer: align(center)[
     #text(size: 8pt, fill: rgb("#777777"))[
-      Reference: #link("https://amr.sarmad.studio/cv")[amr.sarmad.studio/cv]
+      Reference: #link("https://amr-arkani.pages.dev/cv")[amr-arkani.pages.dev/cv]
     ]
   ],
 )
@@ -55,7 +55,7 @@
     #fa-envelope() #h(2pt) amr\@programmer.net #h(4pt) • #h(4pt)
     #fa-whatsapp() #h(2pt) #link("https://wa.me/966504979812")[+966 50 497 9812] #h(4pt) • #h(4pt)
     #fa-map-marker-alt() #h(2pt) Makkah, SA #h(4pt) • #h(4pt)
-    #fa-globe() #h(2pt) #link("https://amr.sarmad.studio")[amr.sarmad.studio] #h(4pt) • #h(4pt)
+    #fa-globe() #h(2pt) #link("https://amr-arkani.pages.dev")[amr-arkani.pages.dev] #h(4pt) • #h(4pt)
     #fa-github() #h(2pt) #link("https://github.com/amr-engineer")[github.com/amr-engineer]
   ]
 ]
@@ -116,7 +116,7 @@ Backend-leaning *software engineer* building *scalable web* platforms and *backe
 )
 
 #project(
-  link("https://github.com/amr-engineer/website")[amr.sarmad.studio],
+  link("https://github.com/amr-engineer/website")[amr-arkani.pages.dev],
   "Personal Website",
   "Released Dec 2025",
   (
@@ -126,7 +126,7 @@ Backend-leaning *software engineer* building *scalable web* platforms and *backe
 )
 
 #project(
-  link("https://amr.sarmad.studio/mini-polkit")[mini-polkit],
+  link("https://amr-arkani.pages.dev/mini-polkit")[mini-polkit],
   "PolicyKit Authorization",
   "Released Jul 2025",
   (
